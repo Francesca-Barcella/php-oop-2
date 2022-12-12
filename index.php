@@ -3,9 +3,9 @@
 /* 
 TRACCIA ESERCIZIO:
 Immaginare quali sono le classi necessarie per creare uno shop online con le seguenti caratteristiche:
-L'e-commerce vende prodotti per animali.
-I prodotti sono categorizzati, le categorie sono Cani o Gatti.
-I prodotti saranno oltre al cibo, anche giochi, cucce, etc.
+L'e-commerce vende PRODOTTI per animali.
+I prodotti sono categorizzati, le CATEGORIE sono CANI o GATTI.
+I prodotti saranno oltre al CIBO, anche GIOCHI, CUCCE, etc.
 Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che si sta visualizzando (prodotto, cibo, gioco, cuccia).
 
 BONUS (Opzionale):
@@ -13,5 +13,15 @@ Il cliente potrà sia comprare i prodotti come ospite, senza doversi registrarsi
 Il cliente effettua il pagamento dei prodotti nel carrello con la carta di credito, che non deve essere scaduta.
 Confermate lettura come al solito e buon lavoro! :baby-yoda: (modificato) 
 
+*/
+
+/* 
+LE CLASSI:
+- Product
+- DogCategory
+- CatCategory
+- Food
+- Toys
+- Kennels
 
 */

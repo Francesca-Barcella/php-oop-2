@@ -3,3 +3,5 @@
 class DogCategory extends Product
 {
 }
+
+

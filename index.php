@@ -30,7 +30,13 @@ LE CLASSI:
 - category
 - image
 - price
-
 */
 
 
+/* collegamento di tutti i file delle classi */
+require __DIR__ . '/Models/Product.php';
+require __DIR__ . '/Models/DogCategory.php';
+require __DIR__ . '/Models/CatCategory.php';
+require __DIR__ . '/Models/Food.php';
+require __DIR__ . '/Models/Toys.php';
+require __DIR__ . '/Models/Kennels.php';

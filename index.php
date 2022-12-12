@@ -23,5 +23,14 @@ LE CLASSI:
 - Food
 - Toys
 - Kennels
+*/
+
+/* proprietà di porduct:
+- name
+- category
+- image
+- price
 
 */
+
+

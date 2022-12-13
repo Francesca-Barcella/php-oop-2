@@ -25,8 +25,3 @@ class Product
     }
 }
 
-
-
-$dogActivity = new Product('Dog Activity Flip Board', 'https://arcaplanet.vtexassets.com/arquivos/ids/265067/PHO_PRO_CLIP_32026-1_-SALL_-AWK_-V1.jpg?v=1757236810', 15, 'DogCategory', 'Activity Flip Board di Trixie è un gioco strategico per cani, particolarmente indicato per cani piccoli.');
-
-var_dump($dogActivity);

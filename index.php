@@ -35,11 +35,10 @@ LE CLASSI:
 
 /* collegamento di tutti i file delle classi */
 require_once __DIR__ . '/Models/Product.php';
-// require __DIR__ . '/Models/DogCategory.php';
-// require __DIR__ . '/Models/CatCategory.php';
+// require __DIR__ . '/Models/Category.php';
 require_once __DIR__ . '/Models/Food.php';
-// require __DIR__ . '/Models/Toys.php';
-// require __DIR__ . '/Models/Kennels.php';
+// require __DIR__ . '/Models/Toy.php';
+// require __DIR__ . '/Models/Kennel.php';
 
 
 $dogActivity = new Product('Dog Activity Flip Board', 'https://arcaplanet.vtexassets.com/arquivos/ids/265067/PHO_PRO_CLIP_32026-1_-SALL_-AWK_-V1.jpg?v=1757236810', 15, 'DogCategory', 'Activity Flip Board di Trixie è un gioco strategico per cani, particolarmente indicato per cani piccoli.');

@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/Product.php';
 
-class Kennels extends Product
+class Kennel extends Product
 {
     public $material;
     public $length;

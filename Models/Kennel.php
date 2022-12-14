@@ -8,6 +8,7 @@ class Kennel extends Product
     public $length;
     public $height;
 
+
     public function __construct(String $name, String $image, Float $price, String $category, String $description, String $material, float $length, float $height,)
     {
         //il parent::_constructor recupera tutti i "$this" del constructor padre
@@ -33,8 +34,12 @@ class Kennel extends Product
         return $this->height;
     }
 
+    public function get_full_size(){
+        return "{$this->length} x {$this->height} cm";
+    }
+
     public function get_details()
     {
-        return "Nome: {$this->name} <br> Price: €{$this->price} <br> Category: {$this->category} <br> Description: {$this->description} <br> Materiale: {$this->material} <br> Misure: {$this->length} x {$this->height} cm";
+        return "Nome: {$this->name} <br> Price: €{$this->price} <br> Category: {$this->category} <br> Description: {$this->description} <br> Materiale: {$this->material} <br> Misure: {$this->get_full_size()}";
     }
 }

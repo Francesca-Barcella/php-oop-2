@@ -67,4 +67,4 @@ $cucciaIglooRosa = new Kennel ('Cuccia Igloo Rosa', 'https://arcaplanet.vtexasse
 
 var_dump($cucciaIglooRosa);
 echo $cucciaIglooRosa->get_details();
-
+//echo $cucciaIglooRosa->get_full_size();

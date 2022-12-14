@@ -11,3 +11,4 @@ class Category
         $this->icon = $icon;
     }
 }
+

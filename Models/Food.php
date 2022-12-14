@@ -5,7 +5,7 @@ class Food extends Product
     public $scadenza;
     public $calorie;
 
-    public function __construct(String $name, String $image, Int $price, String $category, String $description, String $scadenza, Int $calorie)
+    public function __construct(String $name, String $image, Float $price, String $category, String $description, String $scadenza, Int $calorie)
     {
         parent::__construct($name, $image, $price, $category, $description);
 

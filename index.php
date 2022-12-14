@@ -41,14 +41,19 @@ require_once __DIR__ . '/Models/Food.php';
 // require __DIR__ . '/Models/Kennel.php';
 
 
-$dogActivity = new Product('Dog Activity Flip Board', 'https://arcaplanet.vtexassets.com/arquivos/ids/265067/PHO_PRO_CLIP_32026-1_-SALL_-AWK_-V1.jpg?v=1757236810', 15, 'DogCategory', 'Activity Flip Board di Trixie è un gioco strategico per cani, particolarmente indicato per cani piccoli.');
+
+$dogActivity = new Product('Dog Activity Flip Board', 'https://arcaplanet.vtexassets.com/arquivos/ids/265067/PHO_PRO_CLIP_32026-1_-SALL_-AWK_-V1.jpg?v=1757236810', 15.95, 'Dog', 'Activity Flip Board di Trixie è un gioco strategico per cani, particolarmente indicato per cani piccoli.');
 
 var_dump($dogActivity);
 
-$mongeAllBreedsAdult = new Food('Monge All Breeds Adult Salmone e Riso', 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=1757317402', 46, 'DogCategory', 'Le crocchette di Monge Salmone e Riso All Breeds Adult sono un alimento completo per cani adulti di tutte le taglie formulato con un\'unica fonte proteica: il salmone.', '10-12-2025', 500);
+//stampo il metodo get_details creato nella classe product
+echo $dogActivity->get_details();
+
+
+$mongeAllBreedsAdult = new Food('Monge All Breeds Adult Salmone e Riso', 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=1757317402', 46.99, 'Dog', 'Le crocchette di Monge Salmone e Riso All Breeds Adult sono un alimento completo per cani adulti di tutte le taglie formulato con un\'unica fonte proteica: il salmone.', '10-12-2025', 500);
 
 var_dump($mongeAllBreedsAdult);
 
-$purinaProPlan = new Food('Purina Pro Plan Veterinary Diets Ha Hypoallergenic Cane', 'https://arcaplanet.vtexassets.com/arquivos/ids/276183/MAIN.jpg?v=1757293941', 70, 'DogCategory', 'Purina Pro Plan Veterinary Diets HA Hypoallergenic è un alimento secco completo formulato per aiutare a livello nutrizionale i cani che soffrono di allergie alimentari.', '01-03-2030', 1500);
+$purinaProPlan = new Food('Purina Pro Plan Veterinary Diets Ha Hypoallergenic Cane', 'https://arcaplanet.vtexassets.com/arquivos/ids/276183/MAIN.jpg?v=1757293941', 70, 'Dog', 'Purina Pro Plan Veterinary Diets HA Hypoallergenic è un alimento secco completo formulato per aiutare a livello nutrizionale i cani che soffrono di allergie alimentari.', '01-03-2030', 1500);
 
 var_dump($purinaProPlan);

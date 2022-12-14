@@ -38,7 +38,9 @@ require_once __DIR__ . '/Models/Product.php';
 // require __DIR__ . '/Models/Category.php';
 require_once __DIR__ . '/Models/Food.php';
 // require __DIR__ . '/Models/Toy.php';
-require __DIR__ . '/Models/Kennel.php';
+require_once __DIR__ . '/Models/Kennel.php';
+require_once __DIR__ . '/Traits/Available.php';
+
 
 
 
@@ -52,19 +54,14 @@ echo $dogActivity->get_details();
 $mongeAllBreedsAdult = new Food('Monge All Breeds Adult Salmone e Riso', 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=1757317402', 46.99, 'Dog', 'Le crocchette di Monge Salmone e Riso All Breeds Adult sono un alimento completo per cani adulti di tutte le taglie formulato con un\'unica fonte proteica: il salmone.', '10-12-2025', 500, 30);
 
 var_dump($mongeAllBreedsAdult);
-echo $mongeAllBreedsAdult->get_details();echo $mongeAllBreedsAdult->get_full_weight();
-
-
+echo $mongeAllBreedsAdult->get_details();
 
 $purinaProPlan = new Food('Purina Pro Plan Veterinary Diets Ha Hypoallergenic Cane', 'https://arcaplanet.vtexassets.com/arquivos/ids/276183/MAIN.jpg?v=1757293941', 70, 'Dog', 'Purina Pro Plan Veterinary Diets HA Hypoallergenic è un alimento secco completo formulato per aiutare a livello nutrizionale i cani che soffrono di allergie alimentari.', '01-03-2030', 1500, 20);
 
 var_dump($purinaProPlan);
 echo $purinaProPlan->get_details();
-echo $purinaProPlan->get_full_weight();
-
 
 $cucciaIglooRosa = new Kennel ('Cuccia Igloo Rosa', 'https://arcaplanet.vtexassets.com/arquivos/ids/268671/zolux-cuccia-igloo-rosa.jpg?v=1757378722', 39.90, 'Cat', 'Cuccia per gatti di taglia XL ideale per ospitare il tuo felino di casa di taglia grande.', 'cotone e spugna', '140', '100');
-
 var_dump($cucciaIglooRosa);
 echo $cucciaIglooRosa->get_details();
-//echo $cucciaIglooRosa->get_full_size();
+

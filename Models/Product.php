@@ -28,7 +28,7 @@ class Product
 
     //come restituire tutti i dettagli insieme -> metodo
     public function get_details(){
-        return "Nome: {$this->name} <br> Price: €{$this->price} <br> Category: {$this->category} <br> Description: {$this->description}";
+        return "NAME: {$this->name} <br> PRICE: €{$this->price} <br> CATEGORY: {$this->category} <br> DESCRIPTION: {$this->description}";
     }
 
 }

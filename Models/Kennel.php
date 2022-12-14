@@ -1,9 +1,13 @@
 <?php
 
 require_once __DIR__ . '/Product.php';
+require_once __DIR__ . '/Available.php';
 
 class Kennel extends Product
 {
+
+    use Available;
+
     public $material;
     public $length;
     public $height;
@@ -23,7 +27,7 @@ class Kennel extends Product
     {
         return $this->material;
     }
-    
+
     public function get_length()
     {
         return $this->length;
@@ -34,12 +38,13 @@ class Kennel extends Product
         return $this->height;
     }
 
-    public function get_full_size(){
+    public function get_full_size()
+    {
         return "{$this->length} x {$this->height} cm";
     }
 
     public function get_details()
     {
-        return "Nome: {$this->name} <br> Price: €{$this->price} <br> Category: {$this->category} <br> Description: {$this->description} <br> Materiale: {$this->material} <br> Misure: {$this->get_full_size()}";
+        return "NAME: {$this->name} <br> PRICE: €{$this->price} <br> CATEGORY: {$this->category} <br> DESCRIPTION: {$this->description} <br> MATERIAL: {$this->material} <br> SIZE: {$this->get_full_size()}";
     }
 }

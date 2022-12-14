@@ -1,17 +1,21 @@
 <?php
 require_once __DIR__ . '/Product.php';
+require_once __DIR__ . '/Available.php';
+
 class Food extends Product
 {
-    public $scadenza;
+    use Available;
+
+    public $expiry_date;
     public $calorie;
     public $weight;
 
-    public function __construct(String $name, String $image, Float $price, String $category, String $description, String $scadenza, Int $calorie, $weight)
+    public function __construct(String $name, String $image, Float $price, String $category, String $description, String $expiry_date, Int $calorie, $weight)
     {
         //il parent::_constructor recupera tutti i "$this" del constructor padre
         parent::__construct($name, $image, $price, $category, $description);
 
-        $this->scadenza = $scadenza;
+        $this->expiry_date = $expiry_date;
         $this->calorie = $calorie;
         $this->weight = $weight;
     }
@@ -30,6 +34,6 @@ class Food extends Product
 
     public function get_details()
     {
-        return "Nome: {$this->name} <br> Price: €{$this->price} <br> Category: {$this->category} <br> Description: {$this->description} <br> Scadenza: {$this->scadenza} <br> Peso: {$this->get_full_weigh}";
+        return "NAME: {$this->name} <br> PRICE: €{$this->price} <br> CATEGORY: {$this->category} <br> DESCRITPION: {$this->description} <br> EXPIRE_DATE: {$this->expiry_date} <br> WEIGHT: {$this->get_full_weight()}";
     }
 }
